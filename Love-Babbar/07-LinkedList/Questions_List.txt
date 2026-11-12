@@ -4,12 +4,12 @@
 
 Total Items: 30 Items (27 LeetCode Problems + 3 Scratch Implementations)
 Status:
-  [X] Solved & Accepted: 15 Items (14 LeetCode + 1 Scratch Implementation)
+  [X] Solved & Accepted: 16 Items (15 LeetCode + 1 Scratch Implementation)
   [~] Theory/Pattern Watched: 2 Problems (LC 202 & LC 287)
-  [ ] Remaining: 13 LeetCode Problems + 2 Scratch Implementations
+  [ ] Remaining: 12 LeetCode Problems + 2 Scratch Implementations
 
 ========================================================================================
-                             SECTION 1: COMPLETED QUESTIONS [15/30]
+                             SECTION 1: COMPLETED QUESTIONS [16/30]
 ========================================================================================
 
 [X] 01. Singly Linked List Implementation from Scratch (17 Functions Complete)
@@ -86,51 +86,51 @@ Status:
         Pratyush: Reversal Master Video
         Link: https://leetcode.com/problems/reverse-linked-list-ii/
 
+[X] 16. LeetCode 24 - Swap Nodes in Pairs (Medium)
+        Pattern: Dummy Node + Direct 3-Pointer Rewiring
+        Babbar: Lec 93 (Day 16) | Pratyush
+        Link: https://leetcode.com/problems/swap-nodes-in-pairs/
+
 --- CONCEPT / THEORY COVERED FROM PRATYUSH ---
-[~] 16. LeetCode 202 - Happy Number (Easy)
+[~] 17. LeetCode 202 - Happy Number (Easy)
         Pattern: Fast & Slow Pointer on Number Digit Squares (Cycle Detection)
         Pratyush: Episode 18
         Link: https://leetcode.com/problems/happy-number/
 
-[~] 17. LeetCode 287 - Find the Duplicate Number in Array (Medium)
+[~] 18. LeetCode 287 - Find the Duplicate Number in Array (Medium)
         Pattern: Floyd's Cycle Detection on Array Values as Pointers
         Pratyush: Episode 21
         Link: https://leetcode.com/problems/find-the-duplicate-number/
 
 
 ========================================================================================
-                             SECTION 2: REMAINING QUESTIONS [15 ITEMS]
+                             SECTION 2: REMAINING QUESTIONS [14 ITEMS]
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
 PART A: PENDING CORE IMPLEMENTATIONS (2 Items)
 ----------------------------------------------------------------------------------------
-[ ] 18. Doubly Linked List Implementation (Node, Prev, Next, Insert & Delete)
+[ ] 19. Doubly Linked List Implementation (Node, Prev, Next, Insert & Delete)
         File: 2.doublyLinkedList.java
         Babbar: Lec 79 (Day 2)
 
-[ ] 19. Circular Linked List Implementation (Node, Tail, Insert, Delete, do-while loop)
+[ ] 20. Circular Linked List Implementation (Node, Tail, Insert, Delete, do-while loop)
         File: 3.circularLinkedList.java
         Babbar: Lec 80 (Day 3)
 
 
 ----------------------------------------------------------------------------------------
-PART B: IN-PLACE REVERSALS & ROTATIONS (4 Items)
+PART B: IN-PLACE REVERSALS & ROTATIONS (3 Items)
 ----------------------------------------------------------------------------------------
-[ ] 20. LeetCode 143 - Reorder List (Medium)
+[ ] 21. LeetCode 143 - Reorder List (Medium)
         Pratyush: Episode 20
         Trick: Middle -> Reverse 2nd half -> Zigzag merge
         Link: https://leetcode.com/problems/reorder-list/
 
-[ ] 21. LeetCode 61 - Rotate List by K Places (Medium)
+[ ] 22. LeetCode 61 - Rotate List by K Places (Medium)
         Babbar: Lec 92 (Day 15) | Pratyush
         Trick: Connect tail to head (make ring), break at (length - k % length)
         Link: https://leetcode.com/problems/rotate-list/
-
-[ ] 22. LeetCode 24 - Swap Nodes in Pairs (Medium)
-        Babbar: Lec 93 (Day 16)
-        Trick: Dummy node + 2 pointer swapping
-        Link: https://leetcode.com/problems/swap-nodes-in-pairs/
 
 [ ] 23. LeetCode 25 - Reverse Nodes in k-Group (Hard)
         Babbar: Lec 100 (Day 23) | Pratyush Master Video

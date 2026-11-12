@@ -7,7 +7,7 @@
 ## 🚦 Revision Priority Buckets (Spaced Repetition)
 
 * 🟢 **Bucket 1 (Muscle Memory - Mahine me 1 baar):**
-  * `LC 206` (Reverse), `LC 876` (Middle), `LC 141` (Cycle I), `LC 237` (Delete Node without Head)
+  * `LC 206` (Reverse), `LC 876` (Middle), `LC 141` (Cycle I), `LC 237` (Delete Node without Head), `LC 24` (Swap Pairs)
 * 🟡 **Bucket 2 (Edge Case Care - 15 Din me 1 baar):**
   * `LC 2095` (Delete Middle), `LC 203` (Remove Elements with Val), `LC 83` (Duplicates I), `LC 19` (Remove Nth)
 * 🔴 **Bucket 3 (Interview Gold - Har hafte 1 baar pen-paper trace):**
@@ -15,9 +15,9 @@
 
 ---
 
-## 📑 14 LeetCode Master Questions (1-Minute Flashcards)
+## 📑 15 LeetCode Master Questions (1-Minute Flashcards)
 
----
+---s
 
 ### 1️⃣ LeetCode 206: Reverse Linked List
 * **Pattern:** In-Place Pointer Rewiring (3-Pointers)
@@ -273,6 +273,37 @@
   leftPre -> [4 -> 3 -> 2] -> rightPost
   ```
 * **Interview Trap:** Agar `left = 1` ho, toh `head` badal jata hai! Isliye `dummy` banana mandatory hai taaki `leftPre` safely `dummy` par khada ho sake.
+* **Complexity:** $\mathcal{O}(N)$ Time, $\mathcal{O}(1)$ Space.
+
+---
+
+### 1️⃣5️⃣ LeetCode 24: Swap Nodes in Pairs
+* **Pattern:** Dummy Node + Direct 3-Pointer Rewiring
+* **The "Aha!" Invariant:**
+  ```java
+  // 1. Har round me pair identify karo:
+  ListNode first = prev.next;
+  ListNode second = prev.next.next;
+
+  // 2. Teeno taarein rewire karo (Slow Motion):
+  first.next = second.next; // Move 1: aage ka rasta pakdo
+  second.next = first;      // Move 2: 2 ko 1 se jodo
+  prev.next = second;       // Move 3: prev ko 2 se jodo
+
+  // 3. Aage badho:
+  prev = first; // kyunki 'first' ab swap hoke pair ke aakhri me chala gaya hai!
+  ```
+* **Visual:**
+  ```text
+  prev -> [ 1 ] -> [ 2 ] -> [ 3 ]
+             ↓ (Swap 3-moves)
+  prev -> [ 2 ] -> [ 1 ] -> [ 3 ]
+                     ^
+                   (naya prev)
+  ```
+* **Interview Trap:** 
+  1. `dummy` ko kabhi mat hilao (`dummy = first` mat karna), hamesha pointer `prev = dummy` banakar `prev` ko daudao, taaki `return dummy.next` se naya head safely mil sake.
+  2. Loop condition: `while (prev.next != null && prev.next.next != null)` — `prev.next.next != null` hamara **Odd Node Bodyguard** hai jo akele bache hue odd dabba ko crash hone se bachata hai.
 * **Complexity:** $\mathcal{O}(N)$ Time, $\mathcal{O}(1)$ Space.
 
 ---

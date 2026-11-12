@@ -12,7 +12,7 @@
 | # | Item / Question | Type | Difficulty | Core Strategy / Concept |
 |---|---|---|---|---|
 | 1 | **[LC 61: Rotate List](https://leetcode.com/problems/rotate-list/)** | LeetCode | Medium | **The Ring & Cut Trick:** Connect tail to head, cut at `len - k % len`. |
-| 2 | **[LC 24: Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)** | LeetCode | Medium | **Dummy Node + Pair Pointer Swap:** `first = curr.next`, `second = curr.next.next`. |
+| 2 | ~~**[LC 24: Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)**~~ | LeetCode | Medium | ✅ **COMPLETED!** (Dummy Node + 3-Pointer Rewiring) |
 | 3 | **[LC 1721: Swapping Nodes in a LL](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/)** | LeetCode | Medium | **Two Pointers:** K-th from start and K-th from end dhoondo aur swap karo. |
 | 4 | **Doubly Linked List Completion** | Code File | Scratch | [`2.doublyLinkedList.java`](file:///e:/java%20Dsa/Love-Babbar/07-LinkedList/2.doublyLinkedList.java) me `deleteHead`, `deleteTail`, `display`, `printBackward`. |
 

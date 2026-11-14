@@ -7,7 +7,7 @@
 ## 🚦 Revision Priority Buckets (Spaced Repetition)
 
 * 🟢 **Bucket 1 (Muscle Memory - Mahine me 1 baar):**
-  * `LC 206` (Reverse), `LC 876` (Middle), `LC 141` (Cycle I), `LC 237` (Delete Node without Head), `LC 24` (Swap Pairs)
+  * `LC 206` (Reverse), `LC 876` (Middle), `LC 141` (Cycle I), `LC 237` (Delete Node without Head), `LC 24` (Swap Pairs), `LC 61` (Rotate List)
 * 🟡 **Bucket 2 (Edge Case Care - 15 Din me 1 baar):**
   * `LC 2095` (Delete Middle), `LC 203` (Remove Elements with Val), `LC 83` (Duplicates I), `LC 19` (Remove Nth)
 * 🔴 **Bucket 3 (Interview Gold - Har hafte 1 baar pen-paper trace):**
@@ -15,7 +15,7 @@
 
 ---
 
-## 📑 15 LeetCode Master Questions (1-Minute Flashcards)
+## 📑 16 LeetCode Master Questions (1-Minute Flashcards)
 
 ---s
 
@@ -304,6 +304,45 @@
 * **Interview Trap:** 
   1. `dummy` ko kabhi mat hilao (`dummy = first` mat karna), hamesha pointer `prev = dummy` banakar `prev` ko daudao, taaki `return dummy.next` se naya head safely mil sake.
   2. Loop condition: `while (prev.next != null && prev.next.next != null)` — `prev.next.next != null` hamara **Odd Node Bodyguard** hai jo akele bache hue odd dabba ko crash hone se bachata hai.
+* **Complexity:** $\mathcal{O}(N)$ Time, $\mathcal{O}(1)$ Space.
+
+---
+
+### 1️⃣6️⃣ LeetCode 61: Rotate List
+* **Pattern:** The Ring & Cut Trick ⭕✂️ (`tail.next = head`, cut at `len - k % len`)
+* **The "Aha!" Invariant:**
+  ```java
+  // 1. Length gino aur tail par pahucho
+  int len = 1;
+  ListNode tail = head;
+  while (tail.next != null) { tail = tail.next; len++; }
+
+  // 2. k ko limit me lao
+  k = k % len;
+  if (k == 0) return head;
+
+  // 3. Ring banao (Circle)
+  tail.next = head;
+
+  // 4. Naye tail tak daudo (len - k kadam)
+  ListNode newTail = tail;
+  for (int i = 0; i < len - k; i++) newTail = newTail.next;
+
+  // 5. Cut kardo!
+  ListNode newHead = newTail.next;
+  newTail.next = null; // taar kaat di!
+  return newHead;
+  ```
+* **Visual:**
+  ```text
+       [ 1 ] ---> [ 2 ] ---> [ 3 ] -X- (Cut: 3.next = null)
+         ^                     
+         |                     
+       [ 5 ] <--------------- [ 4 ] (newHead)
+  ```
+* **Interview Trap:** 
+  1. `k = k % len` karna zaroori hai, varna agar $k = 2 \times 10^9$ hua toh TLE (Time Limit Exceeded) aa jayega.
+  2. Exact operations $\approx 2N$ hote hain, jise Asymptotic Big-O me constants drop karke **$\mathcal{O}(N)$** likhte hain!
 * **Complexity:** $\mathcal{O}(N)$ Time, $\mathcal{O}(1)$ Space.
 
 ---

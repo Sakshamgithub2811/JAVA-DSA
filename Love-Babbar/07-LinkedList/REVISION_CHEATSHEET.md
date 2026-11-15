@@ -7,7 +7,7 @@
 ## 🚦 Revision Priority Buckets (Spaced Repetition)
 
 * 🟢 **Bucket 1 (Muscle Memory - Mahine me 1 baar):**
-  * `LC 206` (Reverse), `LC 876` (Middle), `LC 141` (Cycle I), `LC 237` (Delete Node without Head), `LC 24` (Swap Pairs), `LC 61` (Rotate List)
+  * `LC 206` (Reverse), `LC 876` (Middle), `LC 141` (Cycle I), `LC 237` (Delete Node without Head), `LC 24` (Swap Pairs), `LC 61` (Rotate List), `LC 1721` (Swap Nodes)
 * 🟡 **Bucket 2 (Edge Case Care - 15 Din me 1 baar):**
   * `LC 2095` (Delete Middle), `LC 203` (Remove Elements with Val), `LC 83` (Duplicates I), `LC 19` (Remove Nth)
 * 🔴 **Bucket 3 (Interview Gold - Har hafte 1 baar pen-paper trace):**
@@ -15,7 +15,7 @@
 
 ---
 
-## 📑 16 LeetCode Master Questions (1-Minute Flashcards)
+## 📑 17 LeetCode Master Questions (1-Minute Flashcards)
 
 ---s
 
@@ -343,6 +343,41 @@
 * **Interview Trap:** 
   1. `k = k % len` karna zaroori hai, varna agar $k = 2 \times 10^9$ hua toh TLE (Time Limit Exceeded) aa jayega.
   2. Exact operations $\approx 2N$ hote hain, jise Asymptotic Big-O me constants drop karke **$\mathcal{O}(N)$** likhte hain!
+* **Complexity:** $\mathcal{O}(N)$ Time, $\mathcal{O}(1)$ Space.
+
+---
+
+### 1️⃣7️⃣ LeetCode 1721: Swapping Nodes in a Linked List
+* **Pattern:** Two-Pointer Runner / Fixed Gap Technique (Single Pass)
+* **The "Aha!" Invariant:**
+  ```java
+  // 1. Shuru se k-th dabba pakdo
+  ListNode first = head;
+  for (int i = 1; i < k; i++) first = first.next;
+
+  // 2. Fixed Gap Runner: fast ko first par, second ko head par rakho
+  ListNode fast = first;
+  ListNode second = head;
+  while (fast.next != null) {
+      fast = fast.next;
+      second = second.next;
+  }
+
+  // 3. Values Swap karo (pointers nahi badalne!)
+  int temp = first.val;
+  first.val = second.val;
+  second.val = temp;
+  return head;
+  ```
+* **Visual:**
+  ```text
+  [ 1 ] ---> [ 2 ] ---> [ 3 ] ---> [ 4 ] ---> [ 5 ]
+               ^                     ^          ^
+             first                 second      fast (hits end)
+  ```
+* **Interview Trap:** 
+  1. Question me pointers rewire karne ko nahi bola, sirf **values** swap karne ko bola hai (`first.val` $\leftrightarrow$ `second.val`).
+  2. Single pass me dono nodes mil jate hain: `fast` jab tail par hoga, `second` theek aakhri se $k$-th node par hoga!
 * **Complexity:** $\mathcal{O}(N)$ Time, $\mathcal{O}(1)$ Space.
 
 ---

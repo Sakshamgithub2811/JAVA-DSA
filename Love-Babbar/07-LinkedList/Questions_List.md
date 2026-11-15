@@ -91,7 +91,7 @@ Yeh questions patterns ke bahar hain aur inke liye specific technique seekhni ho
 ### 🔹 Day 15, 16 & 17 (Lectures 92, 93 & 94): Rotations & Swaps
 - [x] **Day 15 (Lec 92):** Rotate List by K Places ([LeetCode 61](https://leetcode.com/problems/rotate-list/))
 - [x] **Day 16 (Lec 93):** Swap Nodes in Pairs ([LeetCode 24](https://leetcode.com/problems/swap-nodes-in-pairs/))
-- [ ] **Day 17 (Lec 94):** Swapping Nodes in a Linked List ($K$-th from start and end) ([LeetCode 1721](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/))
+- [x] **Day 17 (Lec 94):** Swapping Nodes in a Linked List ($K$-th from start and end) ([LeetCode 1721](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/))
 
 ### 🔹 Day 18 (Lecture 95): Merge Sorted Lists
 - [ ] **Day 18 (Lec 95):** Merge Two Sorted Lists into One ([LeetCode 21](https://leetcode.com/problems/merge-two-sorted-lists/))

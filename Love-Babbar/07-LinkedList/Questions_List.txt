@@ -4,12 +4,12 @@
 
 Total Items: 30 Items (27 LeetCode Problems + 3 Scratch Implementations)
 Status:
-  [X] Solved & Accepted: 17 Items (16 LeetCode + 1 Scratch Implementation)
+  [X] Solved & Accepted: 18 Items (17 LeetCode + 1 Scratch Implementation)
   [~] Theory/Pattern Watched: 2 Problems (LC 202 & LC 287)
-  [ ] Remaining: 11 LeetCode Problems + 2 Scratch Implementations
+  [ ] Remaining: 10 LeetCode Problems + 2 Scratch Implementations
 
 ========================================================================================
-                             SECTION 1: COMPLETED QUESTIONS [17/30]
+                             SECTION 1: COMPLETED QUESTIONS [18/30]
 ========================================================================================
 
 [X] 01. Singly Linked List Implementation from Scratch (17 Functions Complete)
@@ -96,30 +96,35 @@ Status:
         Babbar: Lec 92 (Day 15) | Pratyush
         Link: https://leetcode.com/problems/rotate-list/
 
+[X] 18. LeetCode 1721 - Swapping Nodes in a Linked List (Medium)
+        Pattern: Two-Pointer Runner / Fixed Gap Technique (k-th from start & end, swap values)
+        Babbar: Lec 94 (Day 17)
+        Link: https://leetcode.com/problems/swapping-nodes-in-a-linked-list/
+
 --- CONCEPT / THEORY COVERED FROM PRATYUSH ---
-[~] 18. LeetCode 202 - Happy Number (Easy)
+[~] 19. LeetCode 202 - Happy Number (Easy)
         Pattern: Fast & Slow Pointer on Number Digit Squares (Cycle Detection)
         Pratyush: Episode 18
         Link: https://leetcode.com/problems/happy-number/
 
-[~] 19. LeetCode 287 - Find the Duplicate Number in Array (Medium)
+[~] 20. LeetCode 287 - Find the Duplicate Number in Array (Medium)
         Pattern: Floyd's Cycle Detection on Array Values as Pointers
         Pratyush: Episode 21
         Link: https://leetcode.com/problems/find-the-duplicate-number/
 
 
 ========================================================================================
-                             SECTION 2: REMAINING QUESTIONS [13 ITEMS]
+                             SECTION 2: REMAINING QUESTIONS [12 ITEMS]
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
 PART A: PENDING CORE IMPLEMENTATIONS (2 Items)
 ----------------------------------------------------------------------------------------
-[ ] 20. Doubly Linked List Implementation (Node, Prev, Next, Insert & Delete)
+[ ] 21. Doubly Linked List Implementation (Node, Prev, Next, Insert & Delete)
         File: 2.doublyLinkedList.java
         Babbar: Lec 79 (Day 2)
 
-[ ] 21. Circular Linked List Implementation (Node, Tail, Insert, Delete, do-while loop)
+[ ] 22. Circular Linked List Implementation (Node, Tail, Insert, Delete, do-while loop)
         File: 3.circularLinkedList.java
         Babbar: Lec 80 (Day 3)
 
@@ -127,25 +132,20 @@ PART A: PENDING CORE IMPLEMENTATIONS (2 Items)
 ----------------------------------------------------------------------------------------
 PART B: IN-PLACE REVERSALS & ROTATIONS (2 Items)
 ----------------------------------------------------------------------------------------
-[ ] 22. LeetCode 143 - Reorder List (Medium)
+[ ] 23. LeetCode 143 - Reorder List (Medium)
         Pratyush: Episode 20
         Trick: Middle -> Reverse 2nd half -> Zigzag merge
         Link: https://leetcode.com/problems/reorder-list/
 
-[ ] 23. LeetCode 25 - Reverse Nodes in k-Group (Hard)
+[ ] 24. LeetCode 25 - Reverse Nodes in k-Group (Hard)
         Babbar: Lec 100 (Day 23) | Pratyush Master Video
         Trick: Check if k nodes exist, reverse k nodes, recursive call for rest
         Link: https://leetcode.com/problems/reverse-nodes-in-k-group/
 
 
 ----------------------------------------------------------------------------------------
-PART C: TWO POINTERS, MERGING & RE-ARRANGEMENTS (2 Items)
+PART C: TWO POINTERS, MERGING & RE-ARRANGEMENTS (1 Item)
 ----------------------------------------------------------------------------------------
-[ ] 24. LeetCode 1721 - Swapping Nodes in a Linked List (Medium)
-        Babbar: Lec 94 (Day 17)
-        Trick: Find k-th from start and k-th from end, swap values
-        Link: https://leetcode.com/problems/swapping-nodes-in-a-linked-list/
-
 [ ] 25. LeetCode 21 - Merge Two Sorted Lists (Easy)
         Babbar: Lec 95 (Day 18)
         Trick: Dummy node + iterative 2-pointer comparison

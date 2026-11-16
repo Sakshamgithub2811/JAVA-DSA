@@ -14,7 +14,7 @@
 | 1 | ~~**[LC 61: Rotate List](https://leetcode.com/problems/rotate-list/)**~~ | LeetCode | Medium | ✅ **COMPLETED!** (The Ring & Cut Trick) |
 | 2 | ~~**[LC 24: Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)**~~ | LeetCode | Medium | ✅ **COMPLETED!** (Dummy Node + 3-Pointer Rewiring) |
 | 3 | ~~**[LC 1721: Swapping Nodes in a LL](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/)**~~ | LeetCode | Medium | ✅ **COMPLETED!** (Fixed Gap Two-Pointer Runner) |
-| 4 | **Doubly Linked List Completion** | Code File | Scratch | [`2.doublyLinkedList.java`](file:///e:/java%20Dsa/Love-Babbar/07-LinkedList/2.doublyLinkedList.java) me `deleteHead`, `deleteTail`, `display`, `printBackward`. |
+| 4 | ~~**Doubly Linked List Completion**~~ | Code File | Scratch | ✅ **COMPLETED!** ([`2.doublyLinkedList.java`](file:///e:/java%20Dsa/Love-Babbar/07-LinkedList/2.doublyLinkedList.java) Full Scratch Implementation) |
 
 ---
 

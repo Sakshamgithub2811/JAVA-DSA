@@ -159,7 +159,7 @@ public class singlyLinkedList{
     public void updateValue(int oldValue , int newValue){
         Node temp = head;
 
-        for(int i = 0; i<size; i++){
+        for(int i = 1; i<=size; i++){
             if(temp.data == oldValue){
                 temp.data = newValue;
                 return;    

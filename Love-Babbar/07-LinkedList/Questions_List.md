@@ -61,7 +61,7 @@ Yeh questions patterns ke bahar hain aur inke liye specific technique seekhni ho
 
 ### 🔹 Day 1 & 2 (Lectures 78 & 79): Foundation & Core Types
 - [x] **Day 01 (Lec 78):** Singly Linked List Implementation in Java (Node class, Head, Tail, InsertAtHead, InsertAtTail, InsertAtPosition, Deletion)
-- [ ] **Day 02 (Lec 79):** Doubly Linked List Implementation in Java (Prev and Next pointers, Insert & Delete)
+- [x] **Day 02 (Lec 79):** Doubly Linked List Implementation in Java (Prev and Next pointers, Insert & Delete)
 
 ### 🔹 Day 3 (Lecture 80): Circular Linked List
 - [ ] **Day 03 (Lec 80):** Circular Linked List (Implementation, Insertion, Traversal & Deletion)

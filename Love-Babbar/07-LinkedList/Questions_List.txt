@@ -4,12 +4,12 @@
 
 Total Items: 30 Items (27 LeetCode Problems + 3 Scratch Implementations)
 Status:
-  [X] Solved & Accepted: 18 Items (17 LeetCode + 1 Scratch Implementation)
+  [X] Solved & Accepted: 19 Items (17 LeetCode + 2 Scratch Implementations)
   [~] Theory/Pattern Watched: 2 Problems (LC 202 & LC 287)
-  [ ] Remaining: 10 LeetCode Problems + 2 Scratch Implementations
+  [ ] Remaining: 10 LeetCode Problems + 1 Scratch Implementation
 
 ========================================================================================
-                             SECTION 1: COMPLETED QUESTIONS [18/30]
+                             SECTION 1: COMPLETED QUESTIONS [19/30]
 ========================================================================================
 
 [X] 01. Singly Linked List Implementation from Scratch (17 Functions Complete)
@@ -101,29 +101,30 @@ Status:
         Babbar: Lec 94 (Day 17)
         Link: https://leetcode.com/problems/swapping-nodes-in-a-linked-list/
 
+[X] 19. Doubly Linked List Implementation from Scratch (Complete)
+        File: 2.doublyLinkedList.java
+        Functions: insertAtHead, insertAtTail, insertAtPosition, display, DisplayBackward, SearchList, updateValue, deleteHead, deleteTail, deleteAtPosition
+        Babbar: Lec 79 (Day 2)
+
 --- CONCEPT / THEORY COVERED FROM PRATYUSH ---
-[~] 19. LeetCode 202 - Happy Number (Easy)
+[~] 20. LeetCode 202 - Happy Number (Easy)
         Pattern: Fast & Slow Pointer on Number Digit Squares (Cycle Detection)
         Pratyush: Episode 18
         Link: https://leetcode.com/problems/happy-number/
 
-[~] 20. LeetCode 287 - Find the Duplicate Number in Array (Medium)
+[~] 21. LeetCode 287 - Find the Duplicate Number in Array (Medium)
         Pattern: Floyd's Cycle Detection on Array Values as Pointers
         Pratyush: Episode 21
         Link: https://leetcode.com/problems/find-the-duplicate-number/
 
 
 ========================================================================================
-                             SECTION 2: REMAINING QUESTIONS [12 ITEMS]
+                             SECTION 2: REMAINING QUESTIONS [11 ITEMS]
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
-PART A: PENDING CORE IMPLEMENTATIONS (2 Items)
+PART A: PENDING CORE IMPLEMENTATIONS (1 Item)
 ----------------------------------------------------------------------------------------
-[ ] 21. Doubly Linked List Implementation (Node, Prev, Next, Insert & Delete)
-        File: 2.doublyLinkedList.java
-        Babbar: Lec 79 (Day 2)
-
 [ ] 22. Circular Linked List Implementation (Node, Tail, Insert, Delete, do-while loop)
         File: 3.circularLinkedList.java
         Babbar: Lec 80 (Day 3)

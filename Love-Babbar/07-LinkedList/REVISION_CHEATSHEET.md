@@ -7,7 +7,7 @@
 ## 🚦 Revision Priority Buckets (Spaced Repetition)
 
 * 🟢 **Bucket 1 (Muscle Memory - Mahine me 1 baar):**
-  * `LC 206` (Reverse), `LC 876` (Middle), `LC 141` (Cycle I), `LC 237` (Delete Node without Head), `LC 24` (Swap Pairs), `LC 61` (Rotate List), `LC 1721` (Swap Nodes)
+  * `LC 206` (Reverse), `LC 876` (Middle), `LC 141` (Cycle I), `LC 237` (Delete Node without Head), `LC 24` (Swap Pairs), `LC 61` (Rotate List), `LC 1721` (Swap Nodes), `LC 21` (Merge Lists)
 * 🟡 **Bucket 2 (Edge Case Care - 15 Din me 1 baar):**
   * `LC 2095` (Delete Middle), `LC 203` (Remove Elements with Val), `LC 83` (Duplicates I), `LC 19` (Remove Nth)
 * 🔴 **Bucket 3 (Interview Gold - Har hafte 1 baar pen-paper trace):**
@@ -15,7 +15,7 @@
 
 ---
 
-## 📑 17 LeetCode Master Questions (1-Minute Flashcards)
+## 📑 18 LeetCode Master Questions (1-Minute Flashcards)
 
 ---s
 
@@ -379,6 +379,41 @@
   1. Question me pointers rewire karne ko nahi bola, sirf **values** swap karne ko bola hai (`first.val` $\leftrightarrow$ `second.val`).
   2. Single pass me dono nodes mil jate hain: `fast` jab tail par hoga, `second` theek aakhri se $k$-th node par hoga!
 * **Complexity:** $\mathcal{O}(N)$ Time, $\mathcal{O}(1)$ Space.
+
+---
+
+### 1️⃣8️⃣ LeetCode 21: Merge Two Sorted Lists
+* **Pattern:** Two-Pointer Comparison + Dummy Node + $\mathcal{O}(1)$ Leftover Hook
+* **The "Aha!" Invariant:**
+  ```java
+  ListNode dummy = new ListNode(0);
+  ListNode tail = dummy;
+
+  // 1. Chhote bande ko pakdo aur aage badho
+  while (list1 != null && list2 != null) {
+      if (list1.val <= list2.val) {
+          tail.next = list1;
+          list1 = list1.next;
+      } else {
+          tail.next = list2;
+          list2 = list2.next;
+      }
+      tail = tail.next;
+  }
+
+  // 2. O(1) Leftover Hook: Chain pehle se judi hai, loop ki zaroorat nahi!
+  tail.next = (list1 != null) ? list1 : list2;
+  return dummy.next;
+  ```
+* **Visual:**
+  ```text
+  list1: [ 1 ] ---> [ 2 ] (exhausted)
+  list2: [ 3 ] ===> [ 4 ] ===> [ 5 ] ===> [ 6 ] (already connected!)
+  
+  tail.next = list2  ===> poori train ek jhatke me jud gayi!
+  ```
+* **Interview Trap:** Array Merge Sort me leftover elements ko copy karne ke liye alag se `while` loop chalana padta hai. Lekin Linked List me nodes pehle se aapas me jude hote hain, isliye bina kisi loop ke **$\mathcal{O}(1)$ time me direct `tail.next = list2`** karke poori train ek jhatke me jud jaati hai!
+* **Complexity:** $\mathcal{O}(M + N)$ Time, $\mathcal{O}(1)$ Space.
 
 ---
 

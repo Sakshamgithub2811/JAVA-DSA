@@ -4,12 +4,12 @@
 
 Total Items: 30 Items (27 LeetCode Problems + 3 Scratch Implementations)
 Status:
-  [X] Solved & Accepted: 19 Items (17 LeetCode + 2 Scratch Implementations)
+  [X] Solved & Accepted: 20 Items (18 LeetCode + 2 Scratch Implementations)
   [~] Theory/Pattern Watched: 2 Problems (LC 202 & LC 287)
-  [ ] Remaining: 10 LeetCode Problems + 1 Scratch Implementation
+  [ ] Remaining: 9 LeetCode Problems + 1 Scratch Implementation
 
 ========================================================================================
-                             SECTION 1: COMPLETED QUESTIONS [19/30]
+                             SECTION 1: COMPLETED QUESTIONS [20/30]
 ========================================================================================
 
 [X] 01. Singly Linked List Implementation from Scratch (17 Functions Complete)
@@ -106,26 +106,31 @@ Status:
         Functions: insertAtHead, insertAtTail, insertAtPosition, display, DisplayBackward, SearchList, updateValue, deleteHead, deleteTail, deleteAtPosition
         Babbar: Lec 79 (Day 2)
 
+[X] 20. LeetCode 21 - Merge Two Sorted Lists (Easy)
+        Pattern: Two-Pointer Comparison + Dummy Node + O(1) Leftover Hook
+        Babbar: Lec 95 (Day 18)
+        Link: https://leetcode.com/problems/merge-two-sorted-lists/
+
 --- CONCEPT / THEORY COVERED FROM PRATYUSH ---
-[~] 20. LeetCode 202 - Happy Number (Easy)
+[~] 21. LeetCode 202 - Happy Number (Easy)
         Pattern: Fast & Slow Pointer on Number Digit Squares (Cycle Detection)
         Pratyush: Episode 18
         Link: https://leetcode.com/problems/happy-number/
 
-[~] 21. LeetCode 287 - Find the Duplicate Number in Array (Medium)
+[~] 22. LeetCode 287 - Find the Duplicate Number in Array (Medium)
         Pattern: Floyd's Cycle Detection on Array Values as Pointers
         Pratyush: Episode 21
         Link: https://leetcode.com/problems/find-the-duplicate-number/
 
 
 ========================================================================================
-                             SECTION 2: REMAINING QUESTIONS [11 ITEMS]
+                             SECTION 2: REMAINING QUESTIONS [10 ITEMS]
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
 PART A: PENDING CORE IMPLEMENTATIONS (1 Item)
 ----------------------------------------------------------------------------------------
-[ ] 22. Circular Linked List Implementation (Node, Tail, Insert, Delete, do-while loop)
+[ ] 23. Circular Linked List Implementation (Node, Tail, Insert, Delete, do-while loop)
         File: 3.circularLinkedList.java
         Babbar: Lec 80 (Day 3)
 
@@ -133,28 +138,19 @@ PART A: PENDING CORE IMPLEMENTATIONS (1 Item)
 ----------------------------------------------------------------------------------------
 PART B: IN-PLACE REVERSALS & ROTATIONS (2 Items)
 ----------------------------------------------------------------------------------------
-[ ] 23. LeetCode 143 - Reorder List (Medium)
+[ ] 24. LeetCode 143 - Reorder List (Medium)
         Pratyush: Episode 20
         Trick: Middle -> Reverse 2nd half -> Zigzag merge
         Link: https://leetcode.com/problems/reorder-list/
 
-[ ] 24. LeetCode 25 - Reverse Nodes in k-Group (Hard)
+[ ] 25. LeetCode 25 - Reverse Nodes in k-Group (Hard)
         Babbar: Lec 100 (Day 23) | Pratyush Master Video
         Trick: Check if k nodes exist, reverse k nodes, recursive call for rest
         Link: https://leetcode.com/problems/reverse-nodes-in-k-group/
 
 
 ----------------------------------------------------------------------------------------
-PART C: TWO POINTERS, MERGING & RE-ARRANGEMENTS (1 Item)
-----------------------------------------------------------------------------------------
-[ ] 25. LeetCode 21 - Merge Two Sorted Lists (Easy)
-        Babbar: Lec 95 (Day 18)
-        Trick: Dummy node + iterative 2-pointer comparison
-        Link: https://leetcode.com/problems/merge-two-sorted-lists/
-
-
-----------------------------------------------------------------------------------------
-PART E: PARTITIONS, MATH & ADVANCED INTERVIEW SPECIALS (5 Items)
+PART C: PARTITIONS, MATH & ADVANCED INTERVIEW SPECIALS (5 Items)
 ----------------------------------------------------------------------------------------
 [ ] 26. LeetCode 86 - Partition List around Value X (Medium)
         Babbar: Lec 98 (Day 21)

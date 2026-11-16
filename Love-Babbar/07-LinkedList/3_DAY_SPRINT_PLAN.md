@@ -23,7 +23,7 @@
 
 | # | Item / Question | Type | Difficulty | Core Strategy / Concept |
 |---|---|---|---|---|
-| 5 | **[LC 21: Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)** | LeetCode | Easy | **Dummy Head + Two Pointer Comparison:** Clean merge like Merge Sort. |
+| 5 | ~~**[LC 21: Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)**~~ | LeetCode | Easy | ✅ **COMPLETED!** (Dummy Node + $\mathcal{O}(1)$ Leftover Hook) |
 | 6 | **[LC 86: Partition List](https://leetcode.com/problems/partition-list/)** | LeetCode | Medium | **Two Dummy Chains:** `lessDummy` and `greaterDummy` banao, aakhri me jod do. |
 | 7 | **[LC 143: Reorder List](https://leetcode.com/problems/reorder-list/)** | LeetCode | Medium | **The Triple Combo:** Middle (LC 876) + Reverse 2nd half (LC 206) + Zigzag merge. |
 | 8 | ~~**[LC 92: Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)**~~ | LeetCode | Medium | ✅ **COMPLETED EARLY!** (Cut, Reverse, Re-hook) |

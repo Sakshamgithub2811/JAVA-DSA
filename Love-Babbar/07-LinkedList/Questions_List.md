@@ -94,7 +94,7 @@ Yeh questions patterns ke bahar hain aur inke liye specific technique seekhni ho
 - [x] **Day 17 (Lec 94):** Swapping Nodes in a Linked List ($K$-th from start and end) ([LeetCode 1721](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/))
 
 ### 🔹 Day 18 (Lecture 95): Merge Sorted Lists
-- [ ] **Day 18 (Lec 95):** Merge Two Sorted Lists into One ([LeetCode 21](https://leetcode.com/problems/merge-two-sorted-lists/))
+- [x] **Day 18 (Lec 95):** Merge Two Sorted Lists into One ([LeetCode 21](https://leetcode.com/problems/merge-two-sorted-lists/))
 
 ### 🔹 Day 19 & 20 (Lectures 96 & 97): Cycles & Loops
 - [x] **Day 19 (Lec 96):** Linked List Cycle Detection (Floyd's Algorithm) ([LeetCode 141](https://leetcode.com/problems/linked-list-cycle/))

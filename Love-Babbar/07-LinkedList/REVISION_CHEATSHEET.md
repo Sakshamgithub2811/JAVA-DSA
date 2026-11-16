@@ -7,7 +7,7 @@
 ## 🚦 Revision Priority Buckets (Spaced Repetition)
 
 * 🟢 **Bucket 1 (Muscle Memory - Mahine me 1 baar):**
-  * `LC 206` (Reverse), `LC 876` (Middle), `LC 141` (Cycle I), `LC 237` (Delete Node without Head), `LC 24` (Swap Pairs), `LC 61` (Rotate List), `LC 1721` (Swap Nodes), `LC 21` (Merge Lists)
+  * `LC 206` (Reverse), `LC 876` (Middle), `LC 141` (Cycle I), `LC 237` (Delete Node without Head), `LC 24` (Swap Pairs), `LC 61` (Rotate List), `LC 1721` (Swap Nodes), `LC 21` (Merge Lists), `LC 86` (Partition List)
 * 🟡 **Bucket 2 (Edge Case Care - 15 Din me 1 baar):**
   * `LC 2095` (Delete Middle), `LC 203` (Remove Elements with Val), `LC 83` (Duplicates I), `LC 19` (Remove Nth)
 * 🔴 **Bucket 3 (Interview Gold - Har hafte 1 baar pen-paper trace):**
@@ -15,7 +15,7 @@
 
 ---
 
-## 📑 18 LeetCode Master Questions (1-Minute Flashcards)
+## 📑 19 LeetCode Master Questions (1-Minute Flashcards)
 
 ---s
 
@@ -414,6 +414,44 @@
   ```
 * **Interview Trap:** Array Merge Sort me leftover elements ko copy karne ke liye alag se `while` loop chalana padta hai. Lekin Linked List me nodes pehle se aapas me jude hote hain, isliye bina kisi loop ke **$\mathcal{O}(1)$ time me direct `tail.next = list2`** karke poori train ek jhatke me jud jaati hai!
 * **Complexity:** $\mathcal{O}(M + N)$ Time, $\mathcal{O}(1)$ Space.
+
+---
+
+### 1️⃣9️⃣ LeetCode 86: Partition List
+* **Pattern:** Two Dummy Chains (`smallDummy` & `largeDummy`) + Cycle Cut Trap
+* **The "Aha!" Invariant:**
+  ```java
+  ListNode smallDummy = new ListNode(0), largeDummy = new ListNode(0);
+  ListNode smallTail = smallDummy, largeTail = largeDummy;
+
+  ListNode curr = head;
+  while (curr != null) {
+      if (curr.val < x) {
+          smallTail.next = curr;
+          smallTail = smallTail.next;
+      } else {
+          largeTail.next = curr;
+          largeTail = largeTail.next;
+      }
+      curr = curr.next;
+  }
+
+  // ⚠️ MOST CRITICAL STEP: large list ke aakhri node ka purana pointer kaato!
+  largeTail.next = null;
+
+  // Dono chains aapas me jodo
+  smallTail.next = largeDummy.next;
+  return smallDummy.next;
+  ```
+* **Visual:**
+  ```text
+  smallDummy -> [ 1 ] -> [ 2 ] -> [ 2 ] (smallTail)
+                                         |
+                                         v
+  largeDummy -> [ 4 ] -> [ 3 ] -> [ 5 ] (largeTail -> null)
+  ```
+* **Interview Trap:** Agar `largeTail.next = null;` lagana bhool gaye, toh original list ka koi purana connection bach jayega jo small list ke node ko point kar raha hoga $\rightarrow$ **Cycle (Infinite Loop) create ho jayegi!**
+* **Complexity:** $\mathcal{O}(N)$ Time, $\mathcal{O}(1)$ Space.
 
 ---
 

@@ -101,7 +101,7 @@ Yeh questions patterns ke bahar hain aur inke liye specific technique seekhni ho
 - [x] **Day 20 (Lec 97):** Detect Starting Node of Cycle in Linked List ([LeetCode 142](https://leetcode.com/problems/linked-list-cycle-ii/))
 
 ### 🔹 Day 21 & 22 (Lectures 98 & 99): Partitions & Splits
-- [ ] **Day 21 (Lec 98):** Partition List around value $X$ ([LeetCode 86](https://leetcode.com/problems/partition-list/))
+- [x] **Day 21 (Lec 98):** Partition List around value $X$ ([LeetCode 86](https://leetcode.com/problems/partition-list/))
 - [ ] **Day 22 (Lec 99):** Split Linked List in Parts ([LeetCode 725](https://leetcode.com/problems/split-linked-list-in-parts/))
 
 ### 🔹 Day 23, 24 & 25 (Lectures 100 to 103): Hard Interview Specials

@@ -4,12 +4,12 @@
 
 Total Items: 30 Items (27 LeetCode Problems + 3 Scratch Implementations)
 Status:
-  [X] Solved & Accepted: 21 Items (19 LeetCode + 2 Scratch Implementations)
+  [X] Solved & Accepted: 22 Items (19 LeetCode + 3 Scratch Implementations)
   [~] Theory/Pattern Watched: 2 Problems (LC 202 & LC 287)
-  [ ] Remaining: 8 LeetCode Problems + 1 Scratch Implementation
+  [ ] Remaining: 8 LeetCode Problems (All Scratch Implementations 100% Complete!)
 
 ========================================================================================
-                             SECTION 1: COMPLETED QUESTIONS [21/30]
+                             SECTION 1: COMPLETED QUESTIONS [22/30]
 ========================================================================================
 
 [X] 01. Singly Linked List Implementation from Scratch (17 Functions Complete)
@@ -116,32 +116,29 @@ Status:
         Babbar: Lec 98 (Day 21)
         Link: https://leetcode.com/problems/partition-list/
 
+[X] 22. Circular Linked List Implementation from Scratch (Complete with do-while loop)
+        File: 3.circularLinkedList.java
+        Functions: insertAtHead, insertAtTail, insertAtPosition, display, search, deleteHead, deleteTail, deleteAtPosition
+        Babbar: Lec 80 (Day 3)
+
 --- CONCEPT / THEORY COVERED FROM PRATYUSH ---
-[~] 22. LeetCode 202 - Happy Number (Easy)
+[~] 23. LeetCode 202 - Happy Number (Easy)
         Pattern: Fast & Slow Pointer on Number Digit Squares (Cycle Detection)
         Pratyush: Episode 18
         Link: https://leetcode.com/problems/happy-number/
 
-[~] 23. LeetCode 287 - Find the Duplicate Number in Array (Medium)
+[~] 24. LeetCode 287 - Find the Duplicate Number in Array (Medium)
         Pattern: Floyd's Cycle Detection on Array Values as Pointers
         Pratyush: Episode 21
         Link: https://leetcode.com/problems/find-the-duplicate-number/
 
 
 ========================================================================================
-                             SECTION 2: REMAINING QUESTIONS [9 ITEMS]
+                             SECTION 2: REMAINING QUESTIONS [8 ITEMS]
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
-PART A: PENDING CORE IMPLEMENTATIONS (1 Item)
-----------------------------------------------------------------------------------------
-[ ] 24. Circular Linked List Implementation (Node, Tail, Insert, Delete, do-while loop)
-        File: 3.circularLinkedList.java
-        Babbar: Lec 80 (Day 3)
-
-
-----------------------------------------------------------------------------------------
-PART B: IN-PLACE REVERSALS & ROTATIONS (2 Items)
+PART A: IN-PLACE REVERSALS & ROTATIONS (2 Items)
 ----------------------------------------------------------------------------------------
 [ ] 25. LeetCode 143 - Reorder List (Medium)
         Pratyush: Episode 20
@@ -155,7 +152,7 @@ PART B: IN-PLACE REVERSALS & ROTATIONS (2 Items)
 
 
 ----------------------------------------------------------------------------------------
-PART C: PARTITIONS, MATH & ADVANCED INTERVIEW SPECIALS (4 Items)
+PART B: PARTITIONS, MATH & ADVANCED INTERVIEW SPECIALS (6 Items)
 ----------------------------------------------------------------------------------------
 [ ] 27. LeetCode 725 - Split Linked List in Parts (Medium)
         Babbar: Lec 99 (Day 22)

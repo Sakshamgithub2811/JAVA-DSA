@@ -27,7 +27,7 @@
 | 6 | ~~**[LC 86: Partition List](https://leetcode.com/problems/partition-list/)**~~ | LeetCode | Medium | ✅ **COMPLETED!** (Two Dummy Chains + Cycle Cut Trap) |
 | 7 | **[LC 143: Reorder List](https://leetcode.com/problems/reorder-list/)** | LeetCode | Medium | **The Triple Combo:** Middle (LC 876) + Reverse 2nd half (LC 206) + Zigzag merge. |
 | 8 | ~~**[LC 92: Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)**~~ | LeetCode | Medium | ✅ **COMPLETED EARLY!** (Cut, Reverse, Re-hook) |
-| 9 | **Circular Linked List Completion** | Code File | Scratch | [`3.circularLinkedList.java`](file:///e:/java%20Dsa/Love-Babbar/07-LinkedList/3.circularLinkedList.java) scratch implementation (do-while loop). |
+| 9 | ~~**Circular Linked List Completion**~~ | Code File | Scratch | ✅ **COMPLETED!** ([`3.circularLinkedList.java`](file:///e:/java%20Dsa/Love-Babbar/07-LinkedList/3.circularLinkedList.java) full do-while implementation) |
 
 ---
 

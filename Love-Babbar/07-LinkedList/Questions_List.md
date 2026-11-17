@@ -64,7 +64,7 @@ Yeh questions patterns ke bahar hain aur inke liye specific technique seekhni ho
 - [x] **Day 02 (Lec 79):** Doubly Linked List Implementation in Java (Prev and Next pointers, Insert & Delete)
 
 ### 🔹 Day 3 (Lecture 80): Circular Linked List
-- [ ] **Day 03 (Lec 80):** Circular Linked List (Implementation, Insertion, Traversal & Deletion)
+- [x] **Day 03 (Lec 80):** Circular Linked List (Implementation, Insertion, Traversal & Deletion)
 
 ### 🔹 Day 4 & 5 (Lectures 81 & 82): Reverse & Middle
 - [x] **Day 04 (Lec 81):** Reverse a Linked List (Iterative & Recursive in Java) ([LeetCode 206](https://leetcode.com/problems/reverse-linked-list/))

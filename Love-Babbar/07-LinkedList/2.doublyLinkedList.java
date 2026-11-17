@@ -107,10 +107,8 @@ class doublyLinkedList{
             if(temp.data == data ){
                 System.out.println("Element found");
                    return;
-                
             }
          temp = temp.next;
-        
         }
         System.out.println("Element is not present");
 

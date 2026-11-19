@@ -105,3 +105,15 @@ public class basic {
         System.out.println("Is " + n4 + " a Palindrome? " + isPalindrome); // true
     }
 }
+
+
+/*
+--- MATH ROADMAP / TO-DO TOPICS ---
+1. prime number 
+2. sum of digits
+3. gcd of a number
+4. lcm of a number
+5. armstrong number
+6. find divisior and check perfect number
+7. print all prime 1 to n 
+*/ 

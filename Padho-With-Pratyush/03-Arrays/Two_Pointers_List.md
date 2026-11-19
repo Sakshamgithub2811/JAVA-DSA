@@ -5,7 +5,7 @@ Playlist: **DSA Patterns 2026 | Crack FAANG in 3 Months**
 ---
 
 ## 🎯 What is Two Pointers Pattern?
-Two Pointers ek aisi algorithmic technique hai jisme hum array/string par **2 index pointers** (ya 3 pointers) ko ek saath traverse karate hain taaki $O(N^2)$ brute-force approach ko optimize karke $O(N)$ me solve kiya ja sake.
+Two Pointers ek aisi algorithmic technique hai jisme hum array/string par **2 index pointers** (ya 3 pointers) ko ek saath traverse karate hain taaki $O(N^2)$ brute-force approach ko optimize karke $O(N)$ me solve kiya ja sake.         
 
 Yeh pattern 2 tarike se chalta hai:
 1. **Opposite Direction (Two ends moving inwards):** `left = 0`, `right = n - 1` (Jaise Pair Sum, Palindrome, Reverse)

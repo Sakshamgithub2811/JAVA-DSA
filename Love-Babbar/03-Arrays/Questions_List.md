@@ -27,7 +27,7 @@ Yeh file Love Babbar ke saare Array questions ka 100% complete collection hai:
 - [ ] **Problem 11:** Find Unique Element (XOR logic - element appearing once)
 - [ ] **Problem 12:** Union of Two Arrays
 - [ ] **Problem 13:** Intersection of Two Arrays
-- [ ] **Problem 14:** Pair Sum / Two Sum (Pairs with target sum)
+- [x] **Problem 14:** Pair Sum / Two Sum in Sorted Array ([LeetCode 167](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/))
 - [ ] **Problem 15:** Triplet Sum (Triplets with target sum)
 
 ### 🔹 Lecture 30: Array Problem Solving (Part-4)

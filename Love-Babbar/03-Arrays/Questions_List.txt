@@ -1,0 +1,233 @@
+========================================================================================
+            ARRAY MASTER QUESTION TRACKER (PADHO WITH PRATYUSH + LOVE BABBAR)
+========================================================================================
+
+Total Master Items: 35 Curated Core Questions (FAANG & 450 Sheet Standard)
+Status:
+  [X] Solved & Accepted: 1 Item (LC 167)
+  [ ] Remaining: 34 Items
+
+========================================================================================
+                             SECTION 1: COMPLETED QUESTIONS [1/35]
+========================================================================================
+
+[X] 01. LeetCode 167 - Two Sum II - Input Array Is Sorted (Medium)
+        Pattern: Opposite Direction Two-Pointers (Convergent)
+        Pratyush: Episode 03 | Babbar: Lecture 29
+        Trick: sum < target -> left++, sum > target -> right--, 1-based indexing
+        Link: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+
+
+========================================================================================
+                             SECTION 2: REMAINING QUESTIONS [34 ITEMS]
+========================================================================================
+
+----------------------------------------------------------------------------------------
+PATTERN 1: TWO POINTERS (CONVERGENT - OPPOSITE DIRECTION) [4 Items]
+----------------------------------------------------------------------------------------
+[ ] 02. LeetCode 344 - Reverse String (Easy)
+        Pratyush: Episode 03 | Babbar: Lecture 28
+        Trick: left = 0, right = n-1, swap and move inward
+        Link: https://leetcode.com/problems/reverse-string/
+
+[ ] 03. LeetCode 125 - Valid Palindrome (Easy)
+        Pratyush: Episode 04 | Babbar: Lecture 28
+        Trick: Skip non-alphanumeric, compare lowercased chars from both ends
+        Link: https://leetcode.com/problems/valid-palindrome/
+
+[ ] 04. LeetCode 977 - Squares of a Sorted Array (Easy)
+        Pratyush: Episode 04
+        Trick: Compare abs(nums[left]) vs abs(nums[right]), fill from end of result
+        Link: https://leetcode.com/problems/squares-of-a-sorted-array/
+
+[ ] 05. LeetCode 15 - 3Sum (Medium)
+        Pratyush: Episode 07 | Babbar: Lecture 29
+        Trick: Sort array, fix element i, run Two-Pointers for remainder, skip duplicates
+        Link: https://leetcode.com/problems/3sum/
+
+
+----------------------------------------------------------------------------------------
+PATTERN 2: TWO POINTERS (SAME DIRECTION - READER & WRITER) [3 Items]
+----------------------------------------------------------------------------------------
+[ ] 06. LeetCode 26 - Remove Duplicates from Sorted Array (Easy)
+        Pratyush: Episode 05
+        Trick: Writer pointer at index 1, scan with reader, write when unique
+        Link: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+
+[ ] 07. LeetCode 27 - Remove Element (Easy)
+        Pratyush: Episode 05
+        Trick: Overwrite matching val using writer pointer
+        Link: https://leetcode.com/problems/remove-element/
+
+[ ] 08. LeetCode 283 - Move Zeroes to End (Easy)
+        Pratyush: Episode 05 | Babbar: Homework 01
+        Trick: Non-zero found -> swap with writer pointer and increment writer
+        Link: https://leetcode.com/problems/move-zeroes/
+
+
+----------------------------------------------------------------------------------------
+PATTERN 3: DUTCH NATIONAL FLAG (3-WAY PARTITIONING) [2 Items]
+----------------------------------------------------------------------------------------
+[ ] 09. LeetCode 75 - Sort Colors / Sort 0s, 1s, 2s (Medium)
+        Pratyush: Episode 08 | Babbar: Lecture 30
+        Trick: 3 Pointers (low, mid, high). 0 -> swap(low, mid), 1 -> mid++, 2 -> swap(mid, high)
+        Link: https://leetcode.com/problems/sort-colors/
+
+[ ] 10. Move All Negative Numbers to Beginning (Easy / Medium)
+        Babbar: Lecture 30
+        Trick: Two-pointer partition around 0
+        Link: GFG Standard
+
+
+----------------------------------------------------------------------------------------
+PATTERN 4: SLIDING WINDOW (CONTIGUOUS SUBARRAYS) [4 Items]
+----------------------------------------------------------------------------------------
+[ ] 11. Maximum Sum Subarray of Size K (Easy)
+        Pratyush: Sliding Window Series
+        Trick: Fixed size window, add new incoming, subtract outgoing
+        Link: GFG Standard
+
+[ ] 12. LeetCode 209 - Minimum Size Subarray Sum (Medium)
+        Pratyush: Sliding Window Series | Babbar 450: Sheet 15
+        Trick: Variable window, expand right, shrink left while sum >= target
+        Link: https://leetcode.com/problems/minimum-size-subarray-sum/
+
+[ ] 13. LeetCode 3 - Longest Substring Without Repeating Characters (Medium)
+        Pratyush: Sliding Window Series
+        Trick: Hash map / frequency array to store last seen index of char
+        Link: https://leetcode.com/problems/longest-substring-without-repeating-characters/
+
+[ ] 14. LeetCode 11 - Container With Most Water (Medium)
+        Pratyush: Episode 08 | Babbar 450: Sheet 07
+        Trick: Greedy two pointers, always move the pointer pointing to shorter height
+        Link: https://leetcode.com/problems/container-with-most-water/
+
+
+----------------------------------------------------------------------------------------
+PATTERN 5: PREFIX & SUFFIX SUMS (RUNNING TOTALS) [4 Items]
+----------------------------------------------------------------------------------------
+[ ] 15. LeetCode 724 - Find Pivot Index / Equilibrium Point (Easy)
+        Babbar: Lecture 30
+        Trick: totalSum - leftSum - currVal == leftSum
+        Link: https://leetcode.com/problems/find-pivot-index/
+
+[ ] 16. LeetCode 238 - Product of Array Except Self (Medium)
+        Pratyush: Prefix Sum Master
+        Trick: Prefix product array * Suffix product running scalar in O(1) space
+        Link: https://leetcode.com/problems/product-of-array-except-self/
+
+[ ] 17. LeetCode 560 - Subarray Sum Equals K (Medium)
+        Pratyush: Prefix Sum + Hash Table
+        Trick: runningSum - K count stored in HashMap
+        Link: https://leetcode.com/problems/subarray-sum-equals-k/
+
+[ ] 18. Subarray with 0 Sum (Medium)
+        Babbar 450: Sheet 09
+        Trick: If prefixSum repeats or equals 0, 0-sum subarray exists
+        Link: GFG Standard
+
+
+----------------------------------------------------------------------------------------
+PATTERN 6: KADANE'S ALGORITHM (SUBARRAY MAXIMIZATION) [3 Items]
+----------------------------------------------------------------------------------------
+[ ] 19. LeetCode 53 - Maximum Subarray Sum (Medium)
+        Pratyush & Babbar: Lecture 32
+        Trick: currSum = max(num, currSum + num), track overall maxSum
+        Link: https://leetcode.com/problems/maximum-subarray/
+
+[ ] 20. Print the Subarray with Maximum Sum (Medium)
+        Babbar: Lecture 32
+        Trick: Track start, end, and tempStart whenever currSum resets
+        Link: GFG Standard
+
+[ ] 21. LeetCode 152 - Maximum Product Subarray (Medium)
+        Babbar 450: Sheet 10
+        Trick: Track both maxProduct and minProduct (negative * negative = positive)
+        Link: https://leetcode.com/problems/maximum-product-subarray/
+
+
+----------------------------------------------------------------------------------------
+PATTERN 7: CYCLIC SORT (RANGE 1 TO N / 0 TO N) [3 Items]
+----------------------------------------------------------------------------------------
+[ ] 22. LeetCode 268 - Missing Number (Easy)
+        Pratyush: Cyclic Sort Series
+        Trick: Number X belongs at index X. Swap until in place.
+        Link: https://leetcode.com/problems/missing-number/
+
+[ ] 23. LeetCode 287 - Find the Duplicate Number (Medium)
+        Pratyush: Episode 21 | Babbar: Lecture 31
+        Trick: Cyclic sort or Floyd's Cycle Detection on array values
+        Link: https://leetcode.com/problems/find-the-duplicate-number/
+
+[ ] 24. LeetCode 448 - Find All Numbers Disappeared in an Array (Easy)
+        Pratyush: Cyclic Sort Series
+        Trick: Negative index marking in-place O(1) space
+        Link: https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
+
+
+----------------------------------------------------------------------------------------
+PATTERN 8: MERGE INTERVALS [2 Items]
+----------------------------------------------------------------------------------------
+[ ] 25. LeetCode 56 - Merge Intervals (Medium)
+        Pratyush & Babbar 450: Sheet 13
+        Trick: Sort by start time. If curr.start <= prev.end, merge; else push new
+        Link: https://leetcode.com/problems/merge-intervals/
+
+[ ] 26. LeetCode 57 - Insert Interval (Medium)
+        Pratyush: Intervals Series
+        Trick: Add non-overlapping left, merge overlapping middle, add right
+        Link: https://leetcode.com/problems/insert-interval/
+
+
+----------------------------------------------------------------------------------------
+PATTERN 9: 2D ARRAYS & MATRIX ALGORITHMS [4 Items]
+----------------------------------------------------------------------------------------
+[ ] 27. Wave Print a Matrix (Sine Wave Print) (Easy / Medium)
+        Babbar: Lecture 33
+        Trick: If col is even -> top to bottom; if col is odd -> bottom to top
+        Link: Coding Ninjas / GFG
+
+[ ] 28. LeetCode 54 - Spiral Matrix (Medium)
+        Babbar: Lecture 34
+        Trick: 4 boundaries (top, bottom, left, right) inward loop
+        Link: https://leetcode.com/problems/spiral-matrix/
+
+[ ] 29. LeetCode 48 - Rotate Image by 90 Degrees Clockwise (Medium)
+        Babbar: Lecture 34
+        Trick: Transpose the matrix (swap matrix[i][j] with matrix[j][i]) -> Reverse each row
+        Link: https://leetcode.com/problems/rotate-image/
+
+[ ] 30. LeetCode 74 - Search a 2D Matrix (Medium)
+        Babbar: Homework 11
+        Trick: Treat m x n matrix as 1D virtual sorted array, run binary search
+        Link: https://leetcode.com/problems/search-a-2d-matrix/
+
+
+----------------------------------------------------------------------------------------
+PATTERN 10: FAANG HARDCORE ARRAYS SPECIALS [5 Items]
+----------------------------------------------------------------------------------------
+[ ] 31. LeetCode 169 - Majority Element (Moore's Voting Algorithm) (Easy)
+        Babbar 450: Sheet 02
+        Trick: count += (num == candidate) ? 1 : -1, reset candidate when count == 0
+        Link: https://leetcode.com/problems/majority-element/
+
+[ ] 32. LeetCode 121 - Best Time to Buy and Sell Stock (Easy)
+        Babbar 450: Sheet 04
+        Trick: Track minPriceSoFar, update maxProfit = max(maxProfit, price - minPriceSoFar)
+        Link: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+
+[ ] 33. LeetCode 31 - Next Permutation (Medium)
+        Babbar 450: Sheet 05
+        Trick: Find pivot from right, find successor, swap, reverse suffix
+        Link: https://leetcode.com/problems/next-permutation/
+
+[ ] 34. LeetCode 42 - Trapping Rain Water (Hard)
+        Pratyush: Episode 08 | Babbar 450: Sheet 07
+        Trick: Two pointers with leftMax and rightMax boundaries
+        Link: https://leetcode.com/problems/trapping-rain-water/
+
+[ ] 35. LeetCode 128 - Longest Consecutive Sequence (Medium)
+        Babbar 450: Sheet 11
+        Trick: HashSet lookup. Only start streak if (num - 1) is NOT in set
+        Link: https://leetcode.com/problems/longest-consecutive-sequence/
+========================================================================================

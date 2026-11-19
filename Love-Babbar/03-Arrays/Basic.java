@@ -58,6 +58,7 @@
  */
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Basic {
 
@@ -184,5 +185,24 @@ public class Basic {
         int[] list2 = { 1, 2, 3 };
         System.out.println("Reference comparison (list1 == list2): " + (list1 == list2));             // false
         System.out.println("Content comparison   (Arrays.equals):  " + Arrays.equals(list1, list2));  // true
+
+
+        // =========================================================
+        // 8. TAKING USER INPUT VIA SCANNER CLASS
+        // =========================================================
+        System.out.println("\n=== 8. USER INPUT VIA SCANNER CLASS ===");
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter array size: ");
+        int n = sc.nextInt();
+
+        int[] userArray = new int[n];
+        System.out.println("Enter " + n + " elements:");
+        for (int i = 0; i < n; i++) {
+            userArray[i] = sc.nextInt();
+        }
+
+        System.out.println("Array entered by user: " + Arrays.toString(userArray));
+        sc.close();
     }
 }

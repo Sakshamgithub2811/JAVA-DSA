@@ -1,3 +1,7 @@
 sum of all elements of array 
 multiply of all elemets
 find max value
+
+2 d sum 
+
+max

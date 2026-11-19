@@ -4,11 +4,11 @@
 
 Total Master Items: 35 Curated Core Questions (FAANG & 450 Sheet Standard)
 Status:
-  [X] Solved & Accepted: 1 Item (LC 167)
-  [ ] Remaining: 34 Items
+  [X] Solved & Accepted: 2 Items (LC 167, LC 26)
+  [ ] Remaining: 33 Items
 
 ========================================================================================
-                             SECTION 1: COMPLETED QUESTIONS [1/35]
+                             SECTION 1: COMPLETED QUESTIONS [2/35]
 ========================================================================================
 
 [X] 01. LeetCode 167 - Two Sum II - Input Array Is Sorted (Medium)
@@ -17,9 +17,15 @@ Status:
         Trick: sum < target -> left++, sum > target -> right--, 1-based indexing
         Link: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 
+[X] 02. LeetCode 26 - Remove Duplicates from Sorted Array (Easy)
+        Pattern: Same Direction Two-Pointers (Reader & Writer / Officer-CM)
+        Pratyush: Episode 05
+        Trick: officer starts at 0, if nums[cm] != nums[officer] -> officer++, write nums[officer] = nums[cm]
+        Link: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+
 
 ========================================================================================
-                             SECTION 2: REMAINING QUESTIONS [34 ITEMS]
+                             SECTION 2: REMAINING QUESTIONS [33 ITEMS]
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
@@ -47,19 +53,14 @@ PATTERN 1: TWO POINTERS (CONVERGENT - OPPOSITE DIRECTION) [4 Items]
 
 
 ----------------------------------------------------------------------------------------
-PATTERN 2: TWO POINTERS (SAME DIRECTION - READER & WRITER) [3 Items]
+PATTERN 2: TWO POINTERS (SAME DIRECTION - READER & WRITER) [2 Items]
 ----------------------------------------------------------------------------------------
-[ ] 06. LeetCode 26 - Remove Duplicates from Sorted Array (Easy)
-        Pratyush: Episode 05
-        Trick: Writer pointer at index 1, scan with reader, write when unique
-        Link: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
-
-[ ] 07. LeetCode 27 - Remove Element (Easy)
+[ ] 06. LeetCode 27 - Remove Element (Easy)
         Pratyush: Episode 05
         Trick: Overwrite matching val using writer pointer
         Link: https://leetcode.com/problems/remove-element/
 
-[ ] 08. LeetCode 283 - Move Zeroes to End (Easy)
+[ ] 07. LeetCode 283 - Move Zeroes to End (Easy)
         Pratyush: Episode 05 | Babbar: Homework 01
         Trick: Non-zero found -> swap with writer pointer and increment writer
         Link: https://leetcode.com/problems/move-zeroes/

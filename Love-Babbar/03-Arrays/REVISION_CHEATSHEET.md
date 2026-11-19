@@ -78,3 +78,38 @@
 * **Complexity:** $\mathcal{O}(N)$ Time, $\mathcal{O}(1)$ Space.
 
 ---
+
+### 2️⃣ LeetCode 26: Remove Duplicates from Sorted Array
+* **Pattern:** Same-Direction Two Pointers (Reader & Writer / Officer-CM)
+* **The "Aha!" Invariant:**
+  ```java
+  int officer = 0; // Writer pointer (Last settled unique element)
+
+  for (int cm = 1; cm < nums.length; cm++) { // Reader pointer (Scouting forward)
+      if (nums[cm] != nums[officer]) {
+          officer++;
+          nums[officer] = nums[cm]; // Naye unique bande ko line me aage bithao
+      }
+  }
+  return officer + 1; // Total unique elements count
+  ```
+* **Visual:**
+  ```text
+  Initial:   [ 1,   1,   2 ]
+               ↑    ↑
+            officer cm   ==> nums[cm] == nums[officer] (duplicate, cm++ aage badha)
+
+  Next:      [ 1,   1,   2 ]
+               ↑         ↑
+            officer      cm   ==> nums[cm] != nums[officer] (unique mila!)
+                              officer++ karke nums[officer] = nums[cm] likha
+
+  Result:    [ 1,   2,   2 ], return officer + 1 = 2 elements!
+  ```
+* **Interview Trap:** 
+  1. Extra `count` variable rakhna (jabki `officer + 1` hi exact count hota hai).
+  2. Modifying `cm` manually inside `while` loop with `continue` (error-prone; `for` loop is cleaner).
+  3. Forgetting that question requires **In-Place $\mathcal{O}(1)$ space** modification of `nums`.
+* **Complexity:** $\mathcal{O}(N)$ Time, $\mathcal{O}(1)$ Space.
+
+---

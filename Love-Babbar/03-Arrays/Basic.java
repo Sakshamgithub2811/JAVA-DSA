@@ -45,12 +45,19 @@
  *    - When you write: int[] arr = new int[3];
  *        Stack: [ arr ]  --------points to------->  Heap: [ 0 | 0 | 0 ]
  * 
- * 6. ADVANTAGES:
+ * 6. 2D ARRAYS IN JAVA (ARRAY OF ARRAYS):
+ *    - In Java, a 2D array is NOT a flat continuous matrix in memory.
+ *    - It is an "Array of References", where each element of the outer array 
+ *      points to an independent 1D array on the Heap.
+ *    - This unique structure allows JAGGED (RAGGED) ARRAYS:
+ *      rows can have completely different column lengths!
+ * 
+ * 7. ADVANTAGES:
  *    - Fast O(1) random access using index.
  *    - Cache-friendly (Spatial Locality): Contiguous memory allows the CPU to pre-fetch 
  *      nearby elements into L1/L2 cache, making loops faster.
  * 
- * 7. DISADVANTAGES:
+ * 8. DISADVANTAGES:
  *    - Fixed size (wasted memory if overestimated; overflow if underestimated).
  *    - Expensive insertions and deletions (requires O(N) element shifting).
  *    - Requires a contiguous block of memory (allocation fails if memory is fragmented).
@@ -188,9 +195,54 @@ public class Basic {
 
 
         // =========================================================
-        // 8. TAKING USER INPUT VIA SCANNER CLASS
+        // 8. 2D ARRAYS (MATRICES) & JAGGED ARRAYS
         // =========================================================
-        System.out.println("\n=== 8. USER INPUT VIA SCANNER CLASS ===");
+        System.out.println("\n=== 8. 2D ARRAYS (MATRICES) & JAGGED ARRAYS ===");
+
+        // Declaration & Direct Initialization (2 Rows x 3 Columns)
+        int[][] matrix = {
+            { 1, 2, 3 },
+            { 4, 5, 6 }
+        };
+
+        // Dimensions of 2D Array
+        int rows = matrix.length;       // Number of rows (2)
+        int cols = matrix[0].length;    // Number of columns in row 0 (3)
+        System.out.println("Matrix dimensions: " + rows + " rows x " + cols + " columns");
+
+        // Traversal Way 1: Standard Nested For-Loop
+        System.out.println("Matrix elements (Row-by-Row):");
+        for (int r = 0; r < rows; r++) {
+            for (int c = 0; c < cols; c++) {
+                System.out.print(matrix[r][c] + " ");
+            }
+            System.out.println();
+        }
+
+        // Traversal Way 2: Arrays.deepToString() -> 1-Line print for Multi-Dimensional Arrays!
+        System.out.println("Using Arrays.deepToString(): " + Arrays.deepToString(matrix));
+
+        // JAGGED (RAGGED) ARRAY: Rows with different number of columns!
+        // In Java, int[][] is an "Array of Arrays", so each row can have a unique size:
+        System.out.println("\n--- Jagged Array Example ---");
+        int[][] jagged = new int[3][];
+        jagged[0] = new int[] { 10, 20 };           // Row 0 has 2 columns
+        jagged[1] = new int[] { 30, 40, 50, 60 };   // Row 1 has 4 columns
+        jagged[2] = new int[] { 70 };               // Row 2 has 1 column
+
+        for (int r = 0; r < jagged.length; r++) {
+            System.out.print("Row " + r + " (len=" + jagged[r].length + "): ");
+            for (int c = 0; c < jagged[r].length; c++) {
+                System.out.print(jagged[r][c] + " ");
+            }
+            System.out.println();
+        }
+
+
+        // =========================================================
+        // 9. TAKING USER INPUT VIA SCANNER CLASS
+        // =========================================================
+        System.out.println("\n=== 9. USER INPUT VIA SCANNER CLASS ===");
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter array size: ");

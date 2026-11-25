@@ -19,7 +19,7 @@ Yeh file Love Babbar ke saare Array questions ka 100% complete collection hai:
 - [ ] **Problem 07:** Find first Unsorted Element in Array
 
 ### 🔹 Lecture 28: Array Manipulation Problems (Part-2)
-- [ ] **Problem 08:** Reverse an Array (Two-pointer approach)
+- [x] **Problem 08:** Reverse an Array (Two-pointer approach) ([LeetCode 344](https://leetcode.com/problems/reverse-string/))
 - [ ] **Problem 09:** Extreme Print in Array (First & Last element alternate print)
 - [ ] **Problem 10:** Swap Alternate Elements in an Array
 

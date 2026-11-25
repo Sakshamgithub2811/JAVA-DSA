@@ -223,3 +223,39 @@
 * **Complexity:** $\mathcal{O}(N)$ Time, $\mathcal{O}(1)$ Space.
 
 ---
+
+### 6️⃣ LeetCode 344: Reverse String (or Array)
+* **Pattern:** Opposite-Direction Two Pointers (Convergent Swap)
+* **The "Aha!" Invariant:**
+  ```java
+  int left = 0, right = s.length - 1;
+
+  while (left < right) {
+      char temp = s[left];
+      s[left] = s[right];
+      s[right] = temp;
+      left++;
+      right--;
+  }
+  ```
+* **Visual:**
+  ```text
+  s = [ 'h',   'e',   'l',   'l',   'o' ]
+        ↑                            ↑
+      left (0)                     right (4)  ==> swap('h', 'o') -> left++, right--
+
+      [ 'o',   'e',   'l',   'l',   'h' ]
+               ↑             ↑
+             left (1)      right (3)          ==> swap('e', 'l') -> left++, right--
+
+      [ 'o',   'l',   'l',   'e',   'h' ]
+                      ↑
+                  left == right (2)           ==> Loop terminates!
+  ```
+* **Interview Trap:** 
+  1. LeetCode passes `char[] s`, so strings in in-place problems are simply arrays!
+  2. Confusing string immutability in Java with `char[]`. `String` cannot be modified in-place, but `char[]` can be mutated directly without any extra memory.
+  3. Condition should be `while (left < right)`. If you write `left <= right`, it does one redundant self-swap at middle element, but still harmless.
+* **Complexity:** $\mathcal{O}(N)$ Time, $\mathcal{O}(1)$ Space.
+
+---

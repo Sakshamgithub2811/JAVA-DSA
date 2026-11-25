@@ -17,7 +17,7 @@ Yeh pattern 2 tarike se chalta hai:
 
 ### 🔹 Episode 3 & 4: Master DSA Patterns with 2 Pointers Technique
 - [x] **Problem 01:** Pair with Target Sum / Two Sum in Sorted Array ([LeetCode 167](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/))
-- [ ] **Problem 02:** Reverse an Array / String ([LeetCode 344](https://leetcode.com/problems/reverse-string/))
+- [x] **Problem 02:** Reverse an Array / String ([LeetCode 344](https://leetcode.com/problems/reverse-string/))
 - [ ] **Problem 03:** Valid Palindrome ([LeetCode 125](https://leetcode.com/problems/valid-palindrome/))
 - [x] **Problem 04:** Squares of a Sorted Array ([LeetCode 977](https://leetcode.com/problems/squares-of-a-sorted-array/))
 

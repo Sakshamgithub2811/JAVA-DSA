@@ -4,11 +4,11 @@
 
 Total Master Items: 35 Curated Core Questions (FAANG & 450 Sheet Standard)
 Status:
-  [X] Solved & Accepted: 2 Items (LC 167, LC 26)
-  [ ] Remaining: 33 Items
+  [X] Solved & Accepted: 3 Items (LC 167, LC 26, LC 977)
+  [ ] Remaining: 32 Items
 
 ========================================================================================
-                             SECTION 1: COMPLETED QUESTIONS [2/35]
+                             SECTION 1: COMPLETED QUESTIONS [3/35]
 ========================================================================================
 
 [X] 01. LeetCode 167 - Two Sum II - Input Array Is Sorted (Medium)
@@ -23,13 +23,19 @@ Status:
         Trick: officer starts at 0, if nums[cm] != nums[officer] -> officer++, write nums[officer] = nums[cm]
         Link: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 
+[X] 03. LeetCode 977 - Squares of a Sorted Array (Easy)
+        Pattern: Opposite Direction Two-Pointers (Backward Fill from End)
+        Pratyush: Episode 04
+        Trick: leftSq vs rightSq compare, fill res[k] from k = n-1 down to 0
+        Link: https://leetcode.com/problems/squares-of-a-sorted-array/
+
 
 ========================================================================================
-                             SECTION 2: REMAINING QUESTIONS [33 ITEMS]
+                             SECTION 2: REMAINING QUESTIONS [32 ITEMS]
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
-PATTERN 1: TWO POINTERS (CONVERGENT - OPPOSITE DIRECTION) [4 Items]
+PATTERN 1: TWO POINTERS (CONVERGENT - OPPOSITE DIRECTION) [3 Items]
 ----------------------------------------------------------------------------------------
 [ ] 02. LeetCode 344 - Reverse String (Easy)
         Pratyush: Episode 03 | Babbar: Lecture 28
@@ -41,13 +47,10 @@ PATTERN 1: TWO POINTERS (CONVERGENT - OPPOSITE DIRECTION) [4 Items]
         Trick: Skip non-alphanumeric, compare lowercased chars from both ends
         Link: https://leetcode.com/problems/valid-palindrome/
 
-[ ] 04. LeetCode 977 - Squares of a Sorted Array (Easy)
-        Pratyush: Episode 04
-        Trick: Compare abs(nums[left]) vs abs(nums[right]), fill from end of result
-        Link: https://leetcode.com/problems/squares-of-a-sorted-array/
-
-[ ] 05. LeetCode 15 - 3Sum (Medium)
+[ ] 04. LeetCode 15 - 3Sum (Medium)
         Pratyush: Episode 07 | Babbar: Lecture 29
+        Trick: Sort array, fix element i, run Two-Pointers for remainder, skip duplicates
+        Link: https://leetcode.com/problems/3sum/
         Trick: Sort array, fix element i, run Two-Pointers for remainder, skip duplicates
         Link: https://leetcode.com/problems/3sum/
 

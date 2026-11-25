@@ -113,3 +113,42 @@
 * **Complexity:** $\mathcal{O}(N)$ Time, $\mathcal{O}(1)$ Space.
 
 ---
+
+### 3️⃣ LeetCode 977: Squares of a Sorted Array
+* **Pattern:** Opposite-Direction Two Pointers (Backward Fill from End)
+* **The "Aha!" Invariant:**
+  ```java
+  int left = 0, right = nums.length - 1;
+  int k = nums.length - 1; // Sabse bada number aakhri index par bithaenge
+  int[] res = new int[nums.length];
+
+  while (left <= right) {
+      int leftSq = nums[left] * nums[left];
+      int rightSq = nums[right] * nums[right];
+
+      if (leftSq > rightSq) {
+          res[k] = leftSq;
+          left++;
+      } else {
+          res[k] = rightSq;
+          right--;
+      }
+      k--;
+  }
+  return res;
+  ```
+* **Visual:**
+  ```text
+  nums = [ -4,   -1,    0,    3,   10 ]
+            ↑                        ↑
+          left (0)                 right (4)
+          leftSq = 16              rightSq = 100
+
+  res:  [  _ ,   _ ,   _ ,   _ ,  100 ]  (res[4] = 100, right--)
+  ```
+* **Interview Trap:** 
+  1. Chhote se bada bharne ke chakkar me alag-alag ArrayLists me split karke merge karna (extra space aur code complex ho jata hai).
+  2. Direct square karke `Arrays.sort()` chala dena ($\mathcal{O}(N \log N)$), jabki two-pointer se $\mathcal{O}(N)$ single pass me ho jata hai.
+* **Complexity:** $\mathcal{O}(N)$ Time, $\mathcal{O}(1)$ Auxiliary Space (excluding returned array).
+
+---

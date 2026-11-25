@@ -4,11 +4,11 @@
 
 Total Master Items: 35 Curated Core Questions (FAANG & 450 Sheet Standard)
 Status:
-  [X] Solved & Accepted: 3 Items (LC 167, LC 26, LC 977)
-  [ ] Remaining: 32 Items
+  [X] Solved & Accepted: 4 Items (LC 167, LC 26, LC 977, LC 27)
+  [ ] Remaining: 31 Items
 
 ========================================================================================
-                             SECTION 1: COMPLETED QUESTIONS [3/35]
+                             SECTION 1: COMPLETED QUESTIONS [4/35]
 ========================================================================================
 
 [X] 01. LeetCode 167 - Two Sum II - Input Array Is Sorted (Medium)
@@ -29,9 +29,15 @@ Status:
         Trick: leftSq vs rightSq compare, fill res[k] from k = n-1 down to 0
         Link: https://leetcode.com/problems/squares-of-a-sorted-array/
 
+[X] 04. LeetCode 27 - Remove Element (Easy)
+        Pattern: Same Direction Two-Pointers (Reader & Writer / Overwrite Filter)
+        Pratyush: Episode 05
+        Trick: writer = 0, if nums[reader] != val -> nums[writer++] = nums[reader], return writer
+        Link: https://leetcode.com/problems/remove-element/
+
 
 ========================================================================================
-                             SECTION 2: REMAINING QUESTIONS [32 ITEMS]
+                             SECTION 2: REMAINING QUESTIONS [31 ITEMS]
 ========================================================================================
 
 ----------------------------------------------------------------------------------------
@@ -56,14 +62,9 @@ PATTERN 1: TWO POINTERS (CONVERGENT - OPPOSITE DIRECTION) [3 Items]
 
 
 ----------------------------------------------------------------------------------------
-PATTERN 2: TWO POINTERS (SAME DIRECTION - READER & WRITER) [2 Items]
+PATTERN 2: TWO POINTERS (SAME DIRECTION - READER & WRITER) [1 Item]
 ----------------------------------------------------------------------------------------
-[ ] 06. LeetCode 27 - Remove Element (Easy)
-        Pratyush: Episode 05
-        Trick: Overwrite matching val using writer pointer
-        Link: https://leetcode.com/problems/remove-element/
-
-[ ] 07. LeetCode 283 - Move Zeroes to End (Easy)
+[ ] 05. LeetCode 283 - Move Zeroes to End (Easy)
         Pratyush: Episode 05 | Babbar: Homework 01
         Trick: Non-zero found -> swap with writer pointer and increment writer
         Link: https://leetcode.com/problems/move-zeroes/

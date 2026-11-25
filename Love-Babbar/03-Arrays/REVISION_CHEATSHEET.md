@@ -152,3 +152,38 @@
 * **Complexity:** $\mathcal{O}(N)$ Time, $\mathcal{O}(1)$ Auxiliary Space (excluding returned array).
 
 ---
+
+### 4️⃣ LeetCode 27: Remove Element
+* **Pattern:** Same-Direction Two Pointers (Reader & Writer / Overwrite Filter)
+* **The "Aha!" Invariant:**
+  ```java
+  int officer = 0; // Writer pointer (Where the next accepted element will sit)
+
+  for (int cm = 0; cm < nums.length; cm++) { // Reader pointer
+      if (nums[cm] != val) {
+          nums[officer] = nums[cm]; // Overwrite unwanted elements
+          officer++;
+      }
+  }
+  return officer; // Total valid elements
+  ```
+* **Visual:**
+  ```text
+  nums = [ 3,   2,   2,   3 ], val = 3
+           ↑
+        officer, cm  ==> nums[cm] == 3 (skip, cm++)
+
+         [ 3,   2,   2,   3 ]
+           ↑    ↑
+        officer cm   ==> nums[cm] == 2 (!= val) -> nums[officer] = 2, officer++
+
+         [ 2,   2,   2,   3 ]
+                ↑    ↑
+             officer cm   ==> nums[cm] == 2 (!= val) -> nums[officer] = 2, officer++
+
+  Result: nums = [ 2, 2, ... ], return officer = 2!
+  ```
+* **Interview Trap:** In LC 26 (Remove Duplicates), return was `officer + 1` because `officer` started at 0 with the first element already accepted. In LC 27, `officer` starts at 0 and increments **after** writing, so direct `return officer;` is required!
+* **Complexity:** $\mathcal{O}(N)$ Time, $\mathcal{O}(1)$ Space.
+
+---

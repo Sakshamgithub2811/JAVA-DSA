@@ -25,7 +25,7 @@ Yeh pattern 2 tarike se chalta hai:
 
 ### 🔹 Episode 5: 2 Pointer Pattern (In-Place Array Manipulation)
 - [x] **Problem 05:** Remove Duplicates from Sorted Array ([LeetCode 26](https://leetcode.com/problems/remove-duplicates-from-sorted-array/))
-- [ ] **Problem 06:** Remove Element (In-place removal) ([LeetCode 27](https://leetcode.com/problems/remove-element/))
+- [x] **Problem 06:** Remove Element (In-place removal) ([LeetCode 27](https://leetcode.com/problems/remove-element/))
 - [ ] **Problem 07:** Move Zeroes to the End ([LeetCode 283](https://leetcode.com/problems/move-zeroes/))
 
 ---

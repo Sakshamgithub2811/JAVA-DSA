@@ -4,11 +4,11 @@
 
 Total Master Items: 35 Curated Core Questions (FAANG & 450 Sheet Standard)
 Status:
-  [X] Solved & Accepted: 4 Items (LC 167, LC 26, LC 977, LC 27)
-  [ ] Remaining: 31 Items
+  [X] Solved & Accepted: 5 Items (LC 167, LC 26, LC 977, LC 27, LC 283)
+  [ ] Remaining: 30 Items
 
 ========================================================================================
-                             SECTION 1: COMPLETED QUESTIONS [4/35]
+                             SECTION 1: COMPLETED QUESTIONS [5/35]
 ========================================================================================
 
 [X] 01. LeetCode 167 - Two Sum II - Input Array Is Sorted (Medium)
@@ -35,9 +35,15 @@ Status:
         Trick: writer = 0, if nums[reader] != val -> nums[writer++] = nums[reader], return writer
         Link: https://leetcode.com/problems/remove-element/
 
+[X] 05. LeetCode 283 - Move Zeroes to End (Easy)
+        Pattern: Same Direction Two-Pointers (Reader & Writer / In-Place Swap)
+        Pratyush: Episode 05 | Babbar: Homework 01
+        Trick: writer = 0, if nums[reader] != 0 -> swap(nums[writer++], nums[reader])
+        Link: https://leetcode.com/problems/move-zeroes/
+
 
 ========================================================================================
-                             SECTION 2: REMAINING QUESTIONS [31 ITEMS]
+                             SECTION 2: REMAINING QUESTIONS [30 ITEMS]
 ========================================================================================
 
 ----------------------------------------------------------------------------------------

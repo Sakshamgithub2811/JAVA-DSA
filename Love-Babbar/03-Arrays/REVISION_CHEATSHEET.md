@@ -9,7 +9,7 @@
 * 🟢 **Bucket 1 (Muscle Memory - Mahine me 1 baar):**
   * `LC 167` (Two Sum II - Sorted), `LC 344` (Reverse String), `LC 283` (Move Zeroes), `LC 121` (Best Time to Buy/Sell Stock), `LC 75` (Sort Colors / DNF)
 * 🟡 **Bucket 2 (Edge Case Care - 15 Din me 1 baar):**
-  * `LC 125` (Valid Palindrome), `LC 26` (Remove Duplicates), `LC 977` (Squares of Sorted Array), `LC 724` (Pivot Index), `LC 268` (Missing Number)
+  * `LC 125` (Valid Palindrome), `LC 26` (Remove Duplicates), `LC 977` (Squares of Sorted Array), `LC 27` (Remove Element), `LC 724` (Pivot Index), `LC 268` (Missing Number)
 * 🔴 **Bucket 3 (Interview Gold - Har hafte 1 baar pen-paper trace):**
   * `LC 15` (3Sum Duplicate Bypass), `LC 53` (Kadane's Subarray), `LC 11` (Container With Most Water), `LC 56` (Merge Intervals), `LC 48` (Rotate Image 90°), `LC 42` (Trapping Rain Water), `LC 31` (Next Permutation)
 
@@ -184,6 +184,42 @@
   Result: nums = [ 2, 2, ... ], return officer = 2!
   ```
 * **Interview Trap:** In LC 26 (Remove Duplicates), return was `officer + 1` because `officer` started at 0 with the first element already accepted. In LC 27, `officer` starts at 0 and increments **after** writing, so direct `return officer;` is required!
+* **Complexity:** $\mathcal{O}(N)$ Time, $\mathcal{O}(1)$ Space.
+
+---
+
+### 5️⃣ LeetCode 283: Move Zeroes
+* **Pattern:** Same-Direction Two Pointers (Reader & Writer / Single-Pass Swap)
+* **The "Aha!" Invariant:**
+  ```java
+  int i = 0; // Writer pointer (Where the next non-zero should be placed)
+
+  for (int j = 0; j < nums.length; j++) { // Reader pointer
+      if (nums[j] != 0) {
+          int temp = nums[i];
+          nums[i] = nums[j];
+          nums[j] = temp;
+          i++; // Non-zero safely placed at i, advance writer
+      }
+  }
+  ```
+* **Visual:**
+  ```text
+  nums = [ 0,   1,   0,   3,  12 ]
+           ↑    ↑
+           i    j  ==> nums[j] == 1 (!= 0) -> swap(nums[i], nums[j]) -> [1, 0, 0, 3, 12], i++
+
+         [ 1,   0,   0,   3,  12 ]
+                ↑         ↑
+                i         j  ==> nums[j] == 3 (!= 0) -> swap(nums[i], nums[j]) -> [1, 3, 0, 0, 12], i++
+
+         [ 1,   3,   0,   0,  12 ]
+                     ↑         ↑
+                     i         j  ==> nums[j] == 12 (!= 0) -> swap -> [1, 3, 12, 0, 0], i++
+
+  Result: [ 1, 3, 12, 0, 0 ] in single pass!
+  ```
+* **Interview Trap:** Using a separate array (violates $\mathcal{O}(1)$ space constraint) or doing two passes (copying non-zeros then filling zeroes), when single-pass swap solves it in one loop!
 * **Complexity:** $\mathcal{O}(N)$ Time, $\mathcal{O}(1)$ Space.
 
 ---

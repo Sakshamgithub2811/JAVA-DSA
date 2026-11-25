@@ -59,7 +59,7 @@ Yeh file Love Babbar ke saare Array questions ka 100% complete collection hai:
 
 Yeh wo questions hain jo Babbar ne homework ke roop me students ko solve karne diye hain:
 
-- [ ] **HW 01:** Move Zeroes to End of Array while maintaining relative order (LeetCode 283)
+- [x] **HW 01:** Move Zeroes to End of Array while maintaining relative order (LeetCode 283)
 - [ ] **HW 02:** Check if Array is Sorted and Rotated (LeetCode 1752)
 - [ ] **HW 03:** Rotate Array by K steps to the right (LeetCode 189)
 - [ ] **HW 04:** Merge Two Sorted Arrays into one sorted array (LeetCode 88)

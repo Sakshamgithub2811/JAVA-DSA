@@ -4,11 +4,11 @@
 
 Total Master Items: 35 Curated Core Questions (FAANG & 450 Sheet Standard)
 Status:
-  [X] Solved & Accepted: 6 Items (LC 167, LC 26, LC 977, LC 27, LC 283, LC 344)
-  [ ] Remaining: 29 Items
+  [X] Solved & Accepted: 7 Items (LC 167, LC 26, LC 977, LC 27, LC 283, LC 344, LC 125)
+  [ ] Remaining: 28 Items
 
 ========================================================================================
-                             SECTION 1: COMPLETED QUESTIONS [6/35]
+                             SECTION 1: COMPLETED QUESTIONS [7/35]
 ========================================================================================
 
 [X] 01. LeetCode 167 - Two Sum II - Input Array Is Sorted (Medium)
@@ -47,19 +47,20 @@ Status:
         Trick: left = 0, right = n-1, swap chars, left++, right-- until left >= right
         Link: https://leetcode.com/problems/reverse-string/
 
-
-========================================================================================
-                             SECTION 2: REMAINING QUESTIONS [29 ITEMS]
-========================================================================================
-
-----------------------------------------------------------------------------------------
-PATTERN 1: TWO POINTERS (CONVERGENT - OPPOSITE DIRECTION) [2 Items]
-----------------------------------------------------------------------------------------
-
-[ ] 03. LeetCode 125 - Valid Palindrome (Easy)
+[X] 07. LeetCode 125 - Valid Palindrome (Easy)
+        Pattern: Opposite Direction Two-Pointers (Skip Non-Alphanumeric)
         Pratyush: Episode 04 | Babbar: Lecture 28
-        Trick: Skip non-alphanumeric, compare lowercased chars from both ends
+        Trick: Skip non-alphanumeric with inner while, compare toLowerCase, left++, right--
         Link: https://leetcode.com/problems/valid-palindrome/
+
+
+========================================================================================
+                             SECTION 2: REMAINING QUESTIONS [28 ITEMS]
+========================================================================================
+
+----------------------------------------------------------------------------------------
+PATTERN 1: TWO POINTERS (CONVERGENT - OPPOSITE DIRECTION) [1 Item]
+----------------------------------------------------------------------------------------
 
 [ ] 04. LeetCode 15 - 3Sum (Medium)
         Pratyush: Episode 07 | Babbar: Lecture 29

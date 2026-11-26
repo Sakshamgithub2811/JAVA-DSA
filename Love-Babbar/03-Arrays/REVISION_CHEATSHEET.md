@@ -259,3 +259,36 @@
 * **Complexity:** $\mathcal{O}(N)$ Time, $\mathcal{O}(1)$ Space.
 
 ---
+
+### 7️⃣ LeetCode 125: Valid Palindrome
+* **Pattern:** Opposite-Direction Two Pointers (Skip Non-Alphanumeric)
+* **The "Aha!" Invariant:**
+  ```java
+  int left = 0, right = s.length() - 1;
+
+  while (left < right) {
+      while (left < right && !Character.isLetterOrDigit(s.charAt(left))) left++;
+      while (left < right && !Character.isLetterOrDigit(s.charAt(right))) right--;
+
+      if (Character.toLowerCase(s.charAt(left)) != Character.toLowerCase(s.charAt(right))) {
+          return false;
+      }
+      left++;
+      right--;
+  }
+  return true;
+  ```
+* **Visual:**
+  ```text
+  s = "A man, a plan: Panama"
+       ↑                   ↑
+     left                right   ==> 'A' vs 'a' match -> left++, right--
+
+     Skip spaces & punctuation using inner while(left < right && !Character.isLetterOrDigit(...))
+  ```
+* **Interview Trap:** 
+  1. Creating a filtered string using regex `.replaceAll("[^a-zA-Z0-9]", "")` takes $\mathcal{O}(N)$ extra space! Two pointers does it in $\mathcal{O}(1)$ space.
+  2. Forgetting `left < right` inside the inner skipping while-loops (causes index out of bounds for strings like `"   "`).
+* **Complexity:** $\mathcal{O}(N)$ Time, $\mathcal{O}(1)$ Space.
+
+---

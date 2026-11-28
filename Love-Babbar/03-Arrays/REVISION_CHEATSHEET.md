@@ -292,3 +292,46 @@
 * **Complexity:** $\mathcal{O}(N)$ Time, $\mathcal{O}(1)$ Space.
 
 ---
+
+### 8️⃣ LeetCode 88: Merge Sorted Array
+* **Pattern:** Two Pointers (Backward Fill from End)
+* **The "Aha!" Invariant:**
+  ```java
+  int p1 = m - 1;
+  int p2 = n - 1;
+  int k = m + n - 1; // Or nums1.length - 1
+
+  while (p1 >= 0 && p2 >= 0) {
+      if (nums1[p1] > nums2[p2]) {
+          nums1[k] = nums1[p1];
+          p1--;
+      } else {
+          nums1[k] = nums2[p2];
+          p2--;
+      }
+      k--;
+  }
+
+  // Remaining elements in nums2 (if any)
+  while (p2 >= 0) {
+      nums1[k] = nums2[p2];
+      p2--;
+      k--;
+  }
+  ```
+* **Visual:**
+  ```text
+  nums1 = [ 1,   2,   3,   0,   0,   0 ], m = 3
+                      ↑              ↑
+                      p1             k
+  nums2 = [ 2,   5,   6 ], n = 3
+                      ↑
+                      p2   ==> 6 > 3 -> nums1[k] = 6, p2--, k--
+  ```
+* **Interview Trap:** 
+  1. Filling from the front (`0` index) overwrites unread elements in `nums1`. Filling from the back (`k = m + n - 1`) is safe because the end of `nums1` is empty zeroes!
+  2. Forgetting to copy remaining elements of `nums2` (`while (p2 >= 0)`).
+  3. You DO NOT need to copy remaining elements of `nums1` because they are already in their correct places!
+* **Complexity:** $\mathcal{O}(m + n)$ Time, $\mathcal{O}(1)$ Space.
+
+---

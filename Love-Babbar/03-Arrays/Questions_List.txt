@@ -4,11 +4,11 @@
 
 Total Master Items: 35 Curated Core Questions (FAANG & 450 Sheet Standard)
 Status:
-  [X] Solved & Accepted: 7 Items (LC 167, LC 26, LC 977, LC 27, LC 283, LC 344, LC 125)
-  [ ] Remaining: 28 Items
+  [X] Solved & Accepted: 8 Items (LC 167, LC 26, LC 977, LC 27, LC 283, LC 344, LC 125, LC 88)
+  [ ] Remaining: 27 Items
 
 ========================================================================================
-                             SECTION 1: COMPLETED QUESTIONS [7/35]
+                             SECTION 1: COMPLETED QUESTIONS [8/35]
 ========================================================================================
 
 [X] 01. LeetCode 167 - Two Sum II - Input Array Is Sorted (Medium)
@@ -53,9 +53,15 @@ Status:
         Trick: Skip non-alphanumeric with inner while, compare toLowerCase, left++, right--
         Link: https://leetcode.com/problems/valid-palindrome/
 
+[X] 08. LeetCode 88 - Merge Sorted Array (Easy)
+        Pattern: Two Pointers (Backward Fill from End)
+        Babbar: Homework 04
+        Trick: p1 = m-1, p2 = n-1, k = m+n-1. Compare from back, fill bigger, while(p2>=0) copy rest
+        Link: https://leetcode.com/problems/merge-sorted-array/
+
 
 ========================================================================================
-                             SECTION 2: REMAINING QUESTIONS [28 ITEMS]
+                             SECTION 2: REMAINING QUESTIONS [27 ITEMS]
 ========================================================================================
 
 ----------------------------------------------------------------------------------------

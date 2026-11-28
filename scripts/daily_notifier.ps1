@@ -1,4 +1,4 @@
-﻿# DSA Daily Revision Notifier (Rich Popup & Cheatsheet Launcher)
+# DSA Daily Revision Notifier (Rich Popup & Cheatsheet Launcher)
 # Usage: powershell -ExecutionPolicy Bypass -File "e:\java Dsa\scripts\daily_notifier.ps1"
 
 $schedule = @{
@@ -8,8 +8,8 @@ $schedule = @{
         Cheatsheet = "e:\java Dsa\Love-Babbar\03-Arrays\REVISION_CHEATSHEET.md"
     }
     "Friday" = @{
-        Topic = "ARRAYS - Backward Fill & Palindrome (Kal LC 88 Ke Liye Prime!)"
-        Questions = "1. LC 125 (Valid Palindrome - Aaj Jo Kiya Tha!)`n2. LC 977 (Squares Sorted Array - Backward Fill)`n3. LC 26 (Remove Duplicates - In-Place)"
+        Topic = "ARRAYS - Reader-Writer & Filtering"
+        Questions = "1. LC 26 (Remove Duplicates)`n2. LC 27 (Remove Element)`n3. LC 977 (Squares Sorted Array)"
         Cheatsheet = "e:\java Dsa\Love-Babbar\03-Arrays\REVISION_CHEATSHEET.md"
     }
     "Saturday" = @{

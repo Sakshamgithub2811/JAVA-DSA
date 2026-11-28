@@ -62,7 +62,7 @@ Yeh wo questions hain jo Babbar ne homework ke roop me students ko solve karne d
 - [x] **HW 01:** Move Zeroes to End of Array while maintaining relative order (LeetCode 283)
 - [ ] **HW 02:** Check if Array is Sorted and Rotated (LeetCode 1752)
 - [ ] **HW 03:** Rotate Array by K steps to the right (LeetCode 189)
-- [ ] **HW 04:** Merge Two Sorted Arrays into one sorted array (LeetCode 88)
+- [x] **HW 04:** Merge Two Sorted Arrays into one sorted array (LeetCode 88)
 - [ ] **HW 05:** Add Two Numbers Represented by Arrays (GFG / LeetCode 989)
 - [ ] **HW 06:** Find First Repeating Element in an Array (GFG)
 - [ ] **HW 07:** Find Common Elements in 3 Sorted Arrays (GFG)
